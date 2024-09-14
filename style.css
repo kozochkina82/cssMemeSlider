@@ -8,7 +8,7 @@ body {
 
 }
 .meme_field{
-    background-color:darkslategray;
+    background-color: darkslategray;
     width: 60%;
     margin: 5% auto;
  
@@ -30,14 +30,17 @@ body {
     margin: 0 auto;
     width: 65%;
     padding: 5%;
+   
 
 }
 .slide{
     padding: 0 auto;
     display: none;
+   
 }
 .slide>img{
     width: 100%;
+    border: 5px solid orangered;
 margin: 0 auto;
 }
 .slide.active{
