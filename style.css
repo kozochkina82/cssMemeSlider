@@ -84,6 +84,7 @@ background-color: rgb(57, 59, 59);
 .pagination-point:hover{
     border: 1px solid lightskyblue;
     background-color: azure;
+    cursor: pointer;
 }
 
 @media (max-width: 850px){
