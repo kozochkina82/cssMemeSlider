@@ -76,6 +76,7 @@ background-color: lightskyblue;
 width: 12px;
 height: 12px;
 border-radius: 20px;
+margin: 0 auto;
 }
 .pagination-point.active{
     border: 1px solid lightskyblue;
@@ -86,7 +87,16 @@ background-color: rgb(57, 59, 59);
     background-color: azure;
     cursor: pointer;
 }
+.pag-shell{
+    width: 17px;
+    height:17px;
+    margin: 0;
+    padding: 5px;
 
+}
+.pag-shell:hover{
+    cursor: pointer;
+}
 @media (max-width: 850px){
     .meme_field{
         max-width: 60%;
