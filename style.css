@@ -1,0 +1,171 @@
+body {
+    background-color: dimgray;
+    color: azure;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+.meme_field{
+    background-color:#1f1b17;
+    width: 50%;
+    margin: 5% auto;
+
+}
+.under-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto;
+  
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 65%;
+    padding: 3% 1%;
+
+}
+.slide{
+    padding: 0 auto;
+    display: none;
+}
+.slide>img{
+    width: 100%;
+margin: 0 auto;
+border: 5px solid orangered;
+}
+.slide.active{
+    display: block;
+}
+.phrases{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+ 
+}
+.phrase{
+    padding: 2%;
+    display: none;
+}
+.phrase.active{
+    display: block;
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    height: 13px;
+    margin: 5% auto; 
+
+}
+.pagination-point{
+border: 1px solid lightskyblue;
+background-color: lightskyblue;
+width: 12px;
+height: 12px;
+border-radius: 20px;
+}
+.pagination-point.active{
+    border: 1px solid lightskyblue;
+background-color: rgb(57, 59, 59);
+}
+.pagination-point:hover{
+    border: 1px solid lightskyblue;
+    background-color: azure;
+}
+
+@media (max-width: 850px){
+    .meme_field{
+        max-width: 60%;
+    
+    }
+    .slider{
+        width: 80%;
+        padding: 5%;
+    
+    }
+    .under-slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+     
+    }
+    .slide>img{
+    width: 100%;
+  
+   }
+    .phrases{
+      width: 90%;
+      order: 1;
+    }
+  
+    .pagination{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35%;
+        height: 14px;
+        margin: 1% auto;
+        
+    }
+    .pagination-point{
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    }
+}
+@media(max-width: 600px){
+    .meme_field{
+        max-width: 80%;
+    
+    }
+    .slider{
+        width: 90%;
+        padding: 5%;
+    
+    }
+    .under-slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+     
+    }
+    .slide>img{
+    width: 100%;
+   }
+    .phrases{
+      width: 90%;
+      order: 1;
+    }
+  
+    .pagination{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+        height: 14px;
+        margin: 1% auto;
+        
+    }
+    .pagination-point{
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    }
+}
