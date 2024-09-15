@@ -1,5 +1,5 @@
 body {
-    background-color: dimgray;
+    background-color: black;
     color: azure;
     margin: 0;
     padding: 0;
@@ -7,6 +7,40 @@ body {
     font-size: 15px;
 
 }
+h1 {
+    text-align: center;
+    width: 20%;
+    margin: 5% auto;
+    padding: 1%;
+    border: 2px dashed orangered;
+}
+main {
+    margin: 0;
+}
+.container{
+max-width: 1280px;
+height: 80%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+background-color: dimgray;
+}
+.footer-class{
+    width: 50%;
+    height: 10%;
+margin: 1% auto;
+font-size: 20px;
+}
+.footer-class>p{
+    margin: 0 auto;
+    width: 40%;
+    padding: 1%;
+    text-align: center;
+    border: 2px dashed orangered;
+}
+
 .meme_field{
     background-color:#1f1b17;
     width: 50%;
@@ -29,19 +63,32 @@ body {
     align-items: center;
     flex-shrink: 0;
     margin: 0 auto;
-    width: 65%;
+    width: 80%;
     padding: 3% 1%;
 
 }
 .slide{
+    width: 100%;
     padding: 0 auto;
     display: none;
+    overflow: hidden;
 }
 .slide>img{
-    width: 100%;
+    width: 95%;
 margin: 0 auto;
 border: 5px solid orangered;
+animation-duration: 3s;
+animation-name: fadeOut;
 }
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+       opacity: 1;
+    }
+  }
 .slide.active{
     display: block;
 }
@@ -51,16 +98,34 @@ border: 5px solid orangered;
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    width: 50%;
- 
+    width: 80%;
+
+   overflow: hidden;
 }
+
 .phrase{
+    height: 5%;
     padding: 2%;
     display: none;
+    animation-duration: 1s;
+    animation-name: slideIn;
 }
 .phrase.active{
     display: block;
 }
+@keyframes slideIn {
+    from {
+      translate: -50vw 0;
+      scale: 200% 1;
+      opacity: 0,5;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+      opacity: 1;
+    }
+  }
 .pagination{
     display: flex;
     flex-direction: row;
