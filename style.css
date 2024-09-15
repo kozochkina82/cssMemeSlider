@@ -93,6 +93,9 @@ a {
 .controls{
     width: 50%;
 }
+.controls:hover{
+    cursor: pointer;
+}
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
